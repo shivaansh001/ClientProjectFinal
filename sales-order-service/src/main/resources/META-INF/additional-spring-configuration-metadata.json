@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "CUSTOMER.URL",
+    "type": "java.lang.String",
+    "description": "A description for 'CUSTOMER.URL'"
+  },
+  {
+    "name": "ITEM.URL",
+    "type": "java.lang.String",
+    "description": "A description for 'ITEM.URL'"
+  }
+]}
