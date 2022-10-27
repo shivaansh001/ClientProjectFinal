@@ -13,10 +13,10 @@ import com.example.salesOrder.model.SalesOrder;
 
 public interface SalesOrderRepository extends JpaRepository<SalesOrder, Integer> 
 {
-@Query(value="select orderId,orderDescription from SalesOrder where custId=?1",nativeQuery = true)
+@Query(value="select orderId,orderDescription from SalesOrder s where custId=?1",nativeQuery = true)
 List<OrderDto> getAllOrders(Integer custId);
 
-@Query(value="select orderDescription from SalesOrder orderId=?1",nativeQuery = true)
+@Query(value="select s from SalesOrder s orderId=?1",nativeQuery = true)
 ItemNameDto getOrderDesc(Integer orderId);
 
 }
