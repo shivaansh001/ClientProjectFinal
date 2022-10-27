@@ -17,6 +17,6 @@ public interface SalesOrderRepository extends JpaRepository<SalesOrder, Integer>
 List<OrderDto> getAllOrders(Integer custId);
 
 @Query(value="select s from SalesOrder s orderId=?1",nativeQuery = true)
-ItemNameDto getOrderDesc(Integer orderId);
+SalesOrder getOrderDesc(Integer orderId);
 
 }
